@@ -1,0 +1,198 @@
+/* HERO */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(
+      rgba(2, 6, 23, 0.7),
+      rgba(2, 6, 23, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  color: white;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #e2e8f0;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.call-btn {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.whatsapp-btn {
+  background: #22c55e;
+  color: white;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 30px;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+/* CATEGORIES */
+.categories {
+  padding: 60px 30px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.category-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  margin: 15px 0 10px;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.product-card h4 {
+  padding: 15px;
+}
+
+/* ABOUT */
+.about {
+  padding: 60px 30px;
+  background: #020617;
+  color: #e5e7eb;
+  text-align: center;
+}
+
+/* CTA */
+.contact-cta {
+  padding: 60px 30px;
+  text-align: center;
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+.product-details {
+  padding: 60px 30px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.details-grid div {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+.finance {
+  padding: 60px 30px;
+  text-align: center;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.finance-brands {
+  margin-top: 10px;
+  color: #38bdf8;
+}
+
+.address {
+  padding: 60px 30px;
+  text-align: center;
+  background: #f1f5f9;
+}
+
+.address .contact {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.map {
+  margin-bottom: 0;
+}

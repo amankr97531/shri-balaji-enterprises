@@ -1,0 +1,88 @@
+.about-page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HERO */
+.about-hero {
+  padding: 80px 25px;
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  color: #cbd5f5;
+  font-size: 18px;
+}
+
+/* SECTIONS */
+.about-section {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.about-section.light {
+  background: #f8fafc;
+}
+
+.about-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+.about-section p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.about-section ul li {
+  font-size: 17px;
+  margin: 12px 0;
+}
+
+/* FINANCE */
+.finance {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.finance h2 {
+  color: #38bdf8;
+}
+
+.contact {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-section h2 {
+    font-size: 24px;
+  }
+
+  .about-section p,
+  .about-section ul li {
+    font-size: 15px;
+  }
+}
