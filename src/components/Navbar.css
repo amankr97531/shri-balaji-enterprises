@@ -1,5 +1,6 @@
+/* ================= NAVBAR (HEADER – DARK) ================= */
 .navbar {
-  background: #0f172a;
+  background: #0f172a;              /* DARK HEADER */
   padding: 12px 20px;
   display: flex;
   align-items: center;
@@ -9,7 +10,7 @@
   z-index: 1000;
 }
 
-/* LOGO */
+/* ================= LOGO ================= */
 .logo-section {
   display: flex;
   align-items: center;
@@ -23,14 +24,13 @@
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  object-fit: contain;   /* IMPORTANT */
+  object-fit: contain;
   padding: 6px;
-  box-shadow: 0 0 12px #38bdf8;
   background: white;
+  box-shadow: 0 0 12px #38bdf8;
 }
 
-
-/* DESKTOP ACTION ICONS */
+/* ================= DESKTOP ACTION ICONS ================= */
 .nav-actions {
   display: flex;
   gap: 12px;
@@ -46,7 +46,7 @@
   transform: scale(1.2);
 }
 
-/* LINKS */
+/* ================= DESKTOP LINKS ================= */
 .nav-links {
   list-style: none;
   display: flex;
@@ -63,7 +63,7 @@
   color: #38bdf8;
 }
 
-/* HAMBURGER */
+/* ================= HAMBURGER ================= */
 .hamburger {
   display: none;
   font-size: 26px;
@@ -71,13 +71,15 @@
   cursor: pointer;
 }
 
-/* MOBILE */
+/* ================= MOBILE ICONS (HIDDEN DESKTOP) ================= */
 .mobile-icons {
   display: none;
 }
 
-/* RESPONSIVE */
+/* ================= MOBILE MENU (WHITE ONLY) ================= */
 @media (max-width: 768px) {
+
+  /* Hide desktop actions */
   .nav-actions {
     display: none;
   }
@@ -86,30 +88,56 @@
     display: block;
   }
 
+  /* SLIDE MENU */
   .nav-links {
-    position: absolute;
-    top: 64px;
-    right: 0;
-    background: #020617;
+    position: fixed;
+    top: 64px;                       /* header ke niche */
+    right: -100%;
+    width: 260px;
+    height: calc(100vh - 64px);
+
+    background: #ffffff;             /* 🔥 WHITE MOBILE MENU */
     flex-direction: column;
-    width: 240px;
-    padding: 20px;
-    gap: 15px;
-    display: none;
+    padding: 25px 20px;
+    gap: 16px;
+
+    box-shadow: -10px 0 25px rgba(0,0,0,0.15);
+    transition: right 0.3s ease;
   }
 
   .nav-links.open {
-    display: flex;
+    right: 0;
   }
 
+  .nav-links li a {
+    color: #020617;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  /* MOBILE CALL / WHATSAPP BUTTONS */
   .mobile-icons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    margin-top: 20px;
   }
 
   .mobile-icons a {
-    color: #38bdf8;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
     text-decoration: none;
+    font-weight: 600;
+  }
+
+  .mobile-icons a:first-child {
+    background: #2563eb;
+    color: white;
+  }
+
+  .mobile-icons a:last-child {
+    background: #22c55e;
+    color: white;
   }
 }
