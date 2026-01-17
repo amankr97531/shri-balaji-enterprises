@@ -50,16 +50,30 @@ const Home = () => {
 
       {/* FINANCE */}
 <section className="finance">
-  <h2>Easy Finance Available</h2>
-  <p>
-    Buy your favorite mobile, electronics and appliances with
-    <strong> 0% Interest Finance</strong>.
-  </p>
-  <p className="finance-brands">
-    Available through <strong>Bajaj Finserv</strong> &{" "}
-    <strong>HDB Financial Services</strong>
-  </p>
+  <div className="finance-wrapper">
+
+    <h2>Easy Finance Available</h2>
+
+    <p className="finance-tagline">
+      Buy your favorite mobile, electronics and appliances with  
+      <strong> 0% Interest Finance</strong>.
+    </p>
+
+    <div className="finance-badges">
+      <span>✔ Instant Approval</span>
+      <span>✔ No Hidden Charges</span>
+      <span>✔ Easy EMI</span>
+    </div>
+
+    <p className="finance-brands">
+      Available through  
+      <strong> Bajaj Finserv</strong> &  
+      <strong> HDB Financial Services</strong>
+    </p>
+
+  </div>
 </section>
+
 
 
 
