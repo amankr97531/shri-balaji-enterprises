@@ -28,7 +28,7 @@ html, body {
   width: 100%;
   padding: 70px 20px;
   text-align: center;
-  background: linear-gradient(135deg, #020617, #0f172a);
+  background: linear-gradient(135deg, #082edb, #6e88c2);
 }
 
 .hero-content {
@@ -81,12 +81,12 @@ html, body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 50px 30px;
-  background: #f1f5f9;
+  background: #ccd1ce;
   text-align: center;
 }
 
 .features div {
-  background: white;
+  background: rgb(170, 163, 87);
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
@@ -241,27 +241,63 @@ html, body {
 }
 
 .finance {
-  padding: 70px 30px;
+  padding: 80px 20px;
   text-align: center;
-  background: linear-gradient(135deg, #020617, #0f172a);
-  color: #e5e7eb;
+  background: #f1f5f9;              /* light off-white */
+  color: #020617;
 }
 
+/* White card */
+.finance-wrapper {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+/* Heading */
 .finance h2 {
-  font-size: 34px;
+  font-size: 36px;
   margin-bottom: 10px;
-  color: #38bdf8;
+  color: #0ea5e9;        /* soft blue */
 }
 
-.finance p {
+/* Main line */
+.finance-tagline {
   font-size: 18px;
+  color: #334155;
+  margin-bottom: 20px;
 }
 
-.finance-brands {
-  margin-top: 12px;
-  font-weight: bold;
-  color: #38bdf8;
+/* Badges row */
+.finance-badges {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
+
+/* Pill badges */
+.finance-badges span {
+  background: #e0f2fe;   /* very light blue */
+  color: #020617;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* Brands line */
+.finance-brands {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #0ea5e9;
+}
+
 
 
 .address {
