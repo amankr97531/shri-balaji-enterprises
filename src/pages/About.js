@@ -68,7 +68,7 @@ const About = () => {
           Nangloi, New Delhi – 110041
         </p>
         <p className="contact">
-          📞 7053323220 | 7982337816
+          📞 8676923667 | 8678010969
         </p>
       </section>
     </div>
