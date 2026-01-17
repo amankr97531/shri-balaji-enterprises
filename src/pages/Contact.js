@@ -14,8 +14,8 @@ const Contact = () => {
       <section className="contact-info">
         <div className="info-card">
           <h3>📞 Call Us</h3>
-          <p>7053323220</p>
-          <p>7982337816</p>
+          <p>8676923667</p>
+          <p>8678010969</p>
         </div>
 
         <div className="info-card">
