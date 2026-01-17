@@ -23,11 +23,12 @@ html, body {
 }
 
 /* ======== TEXT SECTION ======== */
+/* ===== HERO TEXT SECTION (PREMIUM) ===== */
 .hero-content-section {
   width: 100%;
-  padding: 60px 20px;
+  padding: 70px 20px;
   text-align: center;
-  background: #020617;
+  background: linear-gradient(135deg, #020617, #0f172a);
 }
 
 .hero-content {
@@ -36,17 +37,17 @@ html, body {
   color: white;
 }
 
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 8px;
+.hero-content h1 {
+  font-size: 46px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
 }
 
-.hero p {
-  font-size: 20px;
+.hero-content p {
+  font-size: 18px;
   color: #e2e8f0;
-  line-height: 1.6;
 }
+
 
 /* Buttons */
 .hero-buttons {
@@ -66,25 +67,38 @@ html, body {
 }
 
 .call-btn {
-  background: #38bdf8;
-  color: #020617;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
 }
 
 .whatsapp-btn {
-  background: #22c55e;
-  color: white;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
 }
+
 
 /* FEATURES */
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  padding: 30px;
-  background: #0f172a;
-  color: white;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 50px 30px;
+  background: #f1f5f9;
   text-align: center;
 }
+
+.features div {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  font-weight: 600;
+  color: #020617;
+  transition: transform 0.3s;
+}
+
+.features div:hover {
+  transform: translateY(-5px);
+}
+
 
 /* CATEGORIES */
 .categories {
@@ -227,16 +241,28 @@ html, body {
 }
 
 .finance {
-  padding: 60px 30px;
+  padding: 70px 30px;
   text-align: center;
-  background: #020617;
+  background: linear-gradient(135deg, #020617, #0f172a);
   color: #e5e7eb;
 }
 
-.finance-brands {
-  margin-top: 10px;
+.finance h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
   color: #38bdf8;
 }
+
+.finance p {
+  font-size: 18px;
+}
+
+.finance-brands {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
 
 .address {
   padding: 60px 30px;
