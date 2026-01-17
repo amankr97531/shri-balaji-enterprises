@@ -262,7 +262,7 @@ html, body {
 .finance h2 {
   font-size: 36px;
   margin-bottom: 10px;
-  color: #0ea5e9;        /* soft blue */
+  color: #006ea0;        /* soft blue */
 }
 
 /* Main line */
@@ -283,7 +283,7 @@ html, body {
 
 /* Pill badges */
 .finance-badges span {
-  background: #e0f2fe;   /* very light blue */
+  background: #c7eeec;   /* very light blue */
   color: #020617;
   padding: 8px 14px;
   border-radius: 20px;
