@@ -140,4 +140,8 @@
     background: #22c55e;
     color: white;
   }
+  .logo-section {
+  text-decoration: none;   /* underline hatane ke liye */
+}
+
 }
