@@ -5,39 +5,40 @@ import bgImage from "../assets/background.png";
 const Home = () => {
   return (
     <>
-      {/* HERO */}
-      <section
-        className="hero"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.75)),
-            url(${bgImage})
-          `,
-        }}
-      >
-        <div className="hero-content">
-          <h1>Shri Balaji Enterprises</h1>
-          <p>
-            Trusted Mobile, Electronics & Furniture Shop
-            <br />
-            Best Price • Genuine Products • Local Trust
-          </p>
+    {/* ====== HERO IMAGE (MOBILE ME ALAG) ====== */}
+<section
+  className="hero-image"
+  style={{ backgroundImage: `url(${bgImage})` }}
+></section>
 
-          <div className="hero-buttons">
-            <a href="tel:8676923667" className="btn call-btn">
-              📞 Call Now
-            </a>
-            <a
-              href="https://wa.me/918676923667"
-              target="_blank"
-              rel="noreferrer"
-              className="btn whatsapp-btn"
-            >
-              💬 WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
+{/* ====== HERO CONTENT (TEXT SECTION) ====== */}
+<section className="hero-content-section">
+  <div className="hero-content">
+    <h1>Shri Balaji Enterprises</h1>
+    <p>
+      Trusted Mobile, Electronics & Furniture Shop
+      <br />
+      Best Price • Genuine Products • Local Trust
+    </p>
+
+    <div className="hero-buttons">
+      <a href="tel:8676923667" className="btn call-btn">
+        📞 Call Now
+      </a>
+      <a
+        href="https://wa.me/918676923667"
+        target="_blank"
+        rel="noreferrer"
+        className="btn whatsapp-btn"
+      >
+        💬 WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
 
       {/* FEATURES */}
       <section className="features">
@@ -143,7 +144,7 @@ const Home = () => {
           {/* FURNITURE */}
           <div className="category-card">
             <img
-              src="https://static.vecteezy.com/system/resources/previews/032/384/976/non_2x/furniture-on-white-background-ai-generative-photo.jpg"
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
               alt="Furniture"
             />
             <h3>Furniture</h3>
@@ -210,7 +211,7 @@ const Home = () => {
   </p>
 
   <p className="contact">
-    📞 7053323220 | 7982337816
+    📞 8976923667 | 8678010969
   </p>
 </section>
 
