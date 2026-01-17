@@ -8,11 +8,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      {/* LOGO + NAME */}
-      <div className="logo-section">
+    {/* LOGO + NAME (CLICKABLE → HOME) */}
+      <Link to="/" className="logo-section">
         <img src={logo} alt="Shri Balaji Enterprises Logo" />
         <span>Shri Balaji Enterprises</span>
-      </div>
+      </Link>
 
       {/* ACTION ICONS (DESKTOP) */}
       <div className="nav-actions">
